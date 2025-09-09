@@ -1,76 +1,90 @@
 ---
-title: "Quickstart"
-description: "Build your dream app in minutes."
+title: "Quick Start Guide"
+description: "Learn how to build your first app with Tupley in just a few minutes"
+icon: "rocket"
 ---
 
-### Step 1: 📝 Describe Your App
+## 1. 📝 Describe Your App
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+Open [Tupley](https://tupley.ai/) and enter a simple prompt to describe the kind of app you want to build. For example:
 
-### Step 2: Deploy your changes
+```
+I'd like to create an inventory management app.
+```
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+Tupley will use this description as the starting point for your project.  
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+<img src="/images/prompting.png" alt="Usual prompting" />
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
-
-### Step 3: Go live
-
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
-
-## Next steps
-
-Now that you have your docs running, explore these key features:
+You can also choose from preset business templates such as:  
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="👥 Client Portal" href="https://app.tupley.ai/dashboard?prompt=Build a secure client portal for my consulting business. It should allow clients to log in, view project updates, access shared files, and communicate with my team. Key features should include a dashboard, a document repository, and a messaging system." />
+  <Card title="📦 Inventory Management" href="https://app.tupley.ai/dashboard?prompt=Create a comprehensive inventory management system for my e-commerce store. I need to track stock levels, manage suppliers, and generate reports on product performance. It should also have barcode scanning capabilities and alerts for low stock." />
+  <Card title="📊 CRM" href="https://app.tupley.ai/dashboard?prompt=Develop a Customer Relationship Management (CRM) system to streamline my sales process. It should help me manage contacts, track leads through the sales pipeline, log interactions, and automate follow-up emails. I also want a dashboard with key sales metrics." />
+  <Card title="📖 Employee Handbook" href="https://app.tupley.ai/dashboard?prompt=Generate an interactive and easy-to-navigate employee handbook. It should cover company policies, culture, benefits, and procedures. I'd like to include a search function and the ability for employees to acknowledge they have read the handbook." />
+  <Card title="📂 Project Management" href="https://app.tupley.ai/dashboard?prompt=Build a robust project management tool for my software development team. It needs features like Kanban boards, task assignments, deadline tracking, file attachments, and comment threads. Integration with GitHub for tracking commits and pull requests would be a plus." />
+  <Card title="⏱ Time Tracking" href="https://app.tupley.ai/dashboard?prompt=Create a simple but effective time tracking application for my freelance business. It should allow me to create projects, track time spent on different tasks, generate invoices based on billable hours, and provide reports on my productivity." />
+  <Card title="🧑‍💼 HR Management" href="https://app.tupley.ai/dashboard?prompt=Develop an all-in-one HR management system for my small business. It should handle employee profiles, manage time-off requests, store important documents like contracts, and streamline the onboarding process for new hires. A simple payroll report generator would also be useful." />
 </CardGroup>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+---
+
+## 2. 🔗 Connect to a Database
+
+Click the arrow button to continue. If you haven't connected to a database yet, a dialog will appear asking you to link one.
+
+**Currently supported databases:**  
+
+<ul>
+  <li><strong>✅ Airtable</strong></li>
+  <li style={{ opacity: 0.55 }}>Google Sheets - Coming soon</li>
+  <li style={{ opacity: 0.55 }}>Notion - Coming soon</li>
+  <li style={{ opacity: 0.55 }}>HubSpot - Coming soon</li>
+  <li style={{ opacity: 0.55 }}>Salesforce - Coming soon</li>
+</ul>
+
+<img src="/images/Inside_prompting.png" alt="Inside prompting" />
+
+---
+
+## 3. ✨ Generate Your App
+
+After connecting to a database (e.g., Airtable) and selecting a table, click the arrow button again to proceed.  
+
+<img src="/images/data_connected.png" alt="Data connected" />
+
+<Tip>
+Tupley will analyze your input, split the work into tasks, prioritize them, and automatically build your app. A progress bar at the top of the page shows real-time updates.
+</Tip>
+
+---
+
+## 4. 👀 Preview Your App
+
+Once generation is complete, a live preview of your app will appear on the side panel.  
+
+<img src="/images/final_product.png" alt="Final product" />
+
+You can test the app immediately, interact with it, and make any adjustments.
+
+---
+
+## 5. 🛠 Customize & Deploy
+
+Use the editor to adjust layouts, text, or other interface elements. When you're ready:  
+
+<Steps>
+  <Step title="👀 Preview">
+    Preview the complete app to ensure everything looks perfect
+  </Step>
+  <Step title="🚀 Deploy">
+    Deploy and use it with your team, clients, or customers
+  </Step>
+</Steps>
+
+---
+
+<Check>
+**Success!** In just a few minutes, you've built, customized, and deployed a fully working app — no coding required.
+</Check>
